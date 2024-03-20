@@ -11,9 +11,13 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/lab": "^5.0.0-alpha.139",
     "@mui/material": "^5.14.4",
+    "date-fns": "^2.30.0",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-social-icons": "^5.15.0"
+    "react-social-icons": "^5.15.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   }
 }
