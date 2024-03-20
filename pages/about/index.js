@@ -29,6 +29,35 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="text.secondary"
           >
+            December 2023 - Present
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Klaviyo
+            </Typography>
+            
+            <p>
+            
+              Senior Software Engineer
+            
+            </p>
+            <p>
+            Building next generation data platform 
+            </p>
+            </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.secondary"
+          >
             June 2022 - Present
           </TimelineOppositeContent>
           <TimelineSeparator>

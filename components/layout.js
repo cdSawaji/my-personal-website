@@ -1,8 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/layout.module.css";
 import navStyles from "../styles/topnav.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Image from "next/image";
 
 export const siteTitle = "Chinmay Sawaji's personal website";
+export const name = "Chinmay Sawaji";
 
 export default function Layout({ children }) {
   return (
@@ -22,10 +25,20 @@ export default function Layout({ children }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      
+      <TopNav />
+      <header className={styles.header}>
+        <Image
+          priority
+          src="/images/profile.jpg"
+          className={utilStyles.borderCircle}
+          height={144}
+          width={144}
+          alt=""
+        />
+      </header>
       <main>
-        <TopNav />
-        {children}</main>
+        {children}
+      </main>
     </div>
   );
 }
