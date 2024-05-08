@@ -4,7 +4,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import Typography from "@mui/material/Typography";
+import Typography from "@mui/material/Typography";5
 import TimelineOppositeContent, {timelineOppositeContentClasses,} from "@mui/lab/TimelineOppositeContent";
 import Layout from "../../components/layout";
 import Link from "next/link";
@@ -29,7 +29,37 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            June 2022 - Present
+            December 2023 - Present
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Klaviyo
+            </Typography>
+            
+            <p>
+            
+              Senior Software Engineer
+            
+            </p>
+            Joined the Data Platform team at Klaviyo in December 2023 as a senior software engineer. My team owns a data orchestration platform and I'm currently working on building the error management component.
+            <p>
+            </p>
+            </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.secondary"
+          >
+            June 2022 - November 2023
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -47,10 +77,9 @@ export default function CustomizedTimeline() {
             
             </p>
             <p>
-            I am working on services that run on Alexa multi-modal devices. These services respond to device sensor inputs, such as ambient lux sensors, and user inputs, such as touch or wake word, and update the device state. For instance, they can wake up the device or trigger a user configured routine.
+              Developed features on multi-modal Echo devices. Most notably contributed to the adaptive content feature on Echo Show devices. You can learn more about this feature <Link href="https://www.cnet.com/home/smart-home/amazon-introduces-new-echo-show-8-with-adaptive-home-screen/">here</Link>.
             </p>
             <p>
-            Contributed feature development and bug fixes for Echo Show 5 Generation 3 (4.5 star rating)
             </p>
             </TimelineContent>
         </TimelineItem>
