@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/layout.module.css";
 import navStyles from "../styles/topnav.module.css";
+import { Analytics } from '@vercel/analytics/react';
 
 export const siteTitle = "Chinmay Sawaji's personal website";
 
@@ -25,7 +26,9 @@ export default function Layout({ children }) {
       
       <main>
         <TopNav />
-        {children}</main>
+        {children}
+        <Analytics />
+      </main>
     </div>
   );
 }
